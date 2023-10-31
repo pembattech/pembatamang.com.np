@@ -138,7 +138,7 @@ a {
 }
 
 .card--project {
-    padding-bottom: 1em;
+    padding-bottom: 2.5em;
 }
 
 .card--project a {
@@ -193,6 +193,10 @@ a {
 
 @media(max-width:600px) {
 
+    #socials--list {
+        row-gap: 1em;
+    }
+
     .section--page {
         padding-top: 1em;
         padding-bottom: 1em;
@@ -233,6 +237,10 @@ a {
 }
 
 @media (min-width: 601px) and (max-width:767px) {
+    #socials--list {
+        row-gap: 1em;
+    }
+
     .split {
         display: flex;
         flex-direction: column;
