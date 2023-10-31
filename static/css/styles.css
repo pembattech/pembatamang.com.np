@@ -159,10 +159,6 @@ a {
     gap: 30px;
 }
 
-.split__content {
-    width: 450px;
-}
-
 .split__content span a {
     font-weight: 900;
     font-size: 18px;
