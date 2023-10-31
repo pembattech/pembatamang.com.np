@@ -217,6 +217,10 @@ a {
         flex-direction: column;
     }
 
+    .project-page {
+        padding: 0 20px;
+    }
+
     .split {
         display: flex;
         flex-direction: column;
@@ -228,7 +232,7 @@ a {
     }
 
     .project-img img {
-        width: 380px;
+        width: 300px;
     }
 }
 
