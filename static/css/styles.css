@@ -172,7 +172,7 @@ a {
     margin-bottom: 3px;
 }
 
-.split__image--sticky {
+.split__content--sticky {
     position: sticky;
     top: 200px;
 }
