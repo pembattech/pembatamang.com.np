@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:  
-    - export DEPLOYPATH=/home/itnation/pembatamang.com.np/repo/
+    - export DEPLOYPATH=/home/itnation/pembatamang.com.np/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R static $DEPLOYPATH
