@@ -7,22 +7,25 @@
     <title>Pemba Tamang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Pemba Tamang">
-    <meta property="og:description" content="Welcome to my digital home! Dive into a world of creativity, innovation, and passion as you explore my portfolio. Let's connect, collaborate, and embark on exciting ventures together. Explore my portfolio now!">
+    <meta property="og:description"
+        content="Welcome to my digital home! Dive into a world of creativity, innovation, and passion as you explore my portfolio. Let's connect, collaborate, and embark on exciting ventures together. Explore my portfolio now!">
     <meta property="og:image" content="https://pembattech.github.io/digital-resume/assets/profile_pic.jpg">
     <meta property="og:url" content="https://www.pembatamang.com.np">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="./static/css/styles.css">
 </head>
 
-<body>
+
     <div id="container--main">
+
+        <button id="mode-switch" style="display: none;">Toggle Mode</button>
 
         <section id="wrapper--hero" class="section--page">
             <img id="profile-pic" src="https://pembattech.github.io/digital-resume/assets/profile_pic.jpg">
 
             <div>
                 <h1 id="user-name">Pemba Tamang</h1>
-                <p id="bio">Django developer.</p>
+                <p id="bio">Web developer.</p>
                 <p id="email">✉️ pembatamang.m@gmail.com</p>
             </div>
         </section>
@@ -30,7 +33,7 @@
         <section class="section--page">
 
             <div id="socials--list">
-                <a href="https://instagram.com/pembattech" target="_blank">Instagram</a>
+                <a href="https://instagram.com/pembattech">Instagram</a>
                 <a href="https://www.linkedin.com/in/pemba-tamang" target="_blank">Linkedin</a>
                 <a href="https://github.com/pembattech" target="_blank">Github</a>
                 <a href="https://pembattech.github.io/digital-resume/assets/PEMBARESUME.pdf" target="_blank">Download
@@ -43,7 +46,7 @@
 
             <div id="wrapper--techstack__items">
                 <div class="card--techstack"><span>Python, JavaScript, HTML, CSS, PHP</span></div>
-                <div class="card--techstack"><span>Django</span></div>
+                <div class="card--techstack"><span>Django, Laravel</span></div>
                 <div class="card--techstack"><span>Postgres, MySQL</span></div>
             </div>
         </section>
@@ -119,12 +122,13 @@
             </div>
         </section>
 
-        <section class="split card--project flex-col-reverse">
+        <section class="split card--project flex-col-reverse" id="bookaroom">
             <div class="col col--left">
                 <div class="split__content--sticky">
                     <div class="split__content">
                         <a href="https://www.github.com/pembattech/book-a-room"><strong>Book a Room</strong></a>
-                        <p>The "Book a Room" app simplifies hotel booking with authentication, management, Stripe payment, serving individuals and corporations securely.</p>
+                        <p>The "Book a Room" app simplifies hotel booking with authentication, management, Stripe
+                            payment, serving individuals and corporations securely.</p>
 
                         <a href="https://bookaroom-pemba.vercel.app/" target="_blank" id="livedemo"> 🔗 Live Demo</a>
 
@@ -142,6 +146,15 @@
         </section>
 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mode-switch").on("click", function () {
+                $("body").toggleClass("dark-mode");
+            });
+        });
+    </script>
 
 </body>
 
